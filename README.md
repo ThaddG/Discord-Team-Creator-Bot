@@ -5,5 +5,5 @@ This bot creates a team (text channel and role) in discord.
 
 
 Usage: 
-$team <TEAM-NAME> : <TEAM-MEMBERS>
-  - ex. $team jello : @person1 @person2
+`$team <TEAM-NAME> : <TEAM-MEMBERS>`
+  - ex. `$team jello : @person1 @person2`
