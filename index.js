@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const keepAlive = require('./server.js');
 const color = require('./randomColorGenerator');
-
+require("dotenv").config();
 
 const client = new Discord.Client();
 
 client.on('ready', async () => {
   // runs when bot comes online 
-  const channel = await client.channels.fetch(process.env['CHANNEL_ID']);
+  const channel = await client.channels.fetch(process.env.channel_id);
 
   console.log('The bot logged in')
 
@@ -78,4 +78,4 @@ client.on('message', async msg => {
 });
 
 keepAlive();
-client.login(process.env['TOKEN']);
+client.login(process.env.token);
